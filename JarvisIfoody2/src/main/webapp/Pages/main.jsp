@@ -18,9 +18,14 @@
 	<%@  taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 	<!------------ Adicionando NavBar ------------>
+	
 	<nav>
 		<%@ include file="NavBar.jsp"%>
 	</nav>
+	
+	
+	<!------------ Adicionando Menu Lareal ------------>
+	
 	
 	<div class="container-fluid px-0">
 	<div class="row">
@@ -73,7 +78,7 @@
 
 
 	</div>
-
+			<!------------ Adicionando Menu Tabela ------------>
 	<div
 		class="col-md-9 align-self-center order-md-2 order-1 mb-md-0 mb-4 Esp-10px">
 		<div class="container-fluid px-4  ">
@@ -90,6 +95,7 @@
 			</thead>
 			<tbody>
 			
+			<!------------ Adicionando Lógica get da tabela ------------>
 			<% 
 			Parceiro parceiro = new Parceiro();
 			ParceiroIfoodyDAO dao = DaoFactory.getParceiroIfoodyDAO();
