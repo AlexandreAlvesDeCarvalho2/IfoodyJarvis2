@@ -15,8 +15,8 @@ public class DbMananger {
 			
 			conexao = DriverManager.getConnection(    // interface JDBC cuja implementação DriveManagemenger abre uma conexao com a url definida para o banco de dados
 					"jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL",
-					"rm89105",
-					"261192");
+					"RM87840",
+					"130990");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

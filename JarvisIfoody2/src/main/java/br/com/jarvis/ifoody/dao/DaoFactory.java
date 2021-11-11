@@ -16,4 +16,8 @@ package br.com.jarvis.ifoody.dao;
 			return new RestauranteDAOImpl();
 			}
 		
+		public static PratoDAO getPratoDAO(){
+			return new PratoDAOImpl();
+			}
+		
 }

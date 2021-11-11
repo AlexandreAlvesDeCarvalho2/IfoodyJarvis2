@@ -9,7 +9,13 @@
 
 </head>
 
+<%
 
+	PratoDAO dao4 = DaoFactory.getPratoDAO();
+	List<Prato> pratos;
+	
+	pratos = dao4.buscarTodos();
+%>
 
 
 <body>
@@ -91,30 +97,32 @@
 					<th scope="col">Descrição</th>
 					<th scope="col">Valor</th>
 					<th scope="col">estilo de comida</th>
+					<th scope="col">Tipo de comida</th>
 				</tr>
 			</thead>
 			<tbody>
 			
 			<!------------ Adicionando Lógica get da tabela ------------>
 			<% 
-			Parceiro parceiro = new Parceiro();
-			ParceiroIfoodyDAO dao = DaoFactory.getParceiroIfoodyDAO();
-			
+			for(Prato c: pratos ){
+				
 							
 			
 			
 			%>
 				<tr>
 					<th scope="row">1</th>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
+					<td><%=c.getCd_restaurante() %></td>
+					<td><%=c.getNm_prato()%></td>
+					<td><%=c.getDesc_prato() %></td>
+					<td>R$<%=c.getVl_prato() %></td>
+					<td><%=c.getCd_estilo_cozinha() %></td>
+					<td><%=c.getCd_tipo_comida() %></td>
+					
+					
 				</tr>
 
+			<% } %>
 			</tbody>
 			</table>
 

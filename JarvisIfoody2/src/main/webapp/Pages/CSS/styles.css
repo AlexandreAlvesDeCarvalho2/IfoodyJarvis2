@@ -30,6 +30,7 @@ p { color: #ffffff;
 
 h3 {
 	color: #000000;
+	padding-top: 20px;
 	
 }
   /* ---------------  Barra de navegação  ------------------ */
@@ -76,8 +77,8 @@ header, .navbar {
    
 .btn-conf {
 		
-  background-color: #ff0000;
-  color: #FFF;
+  background-color: #000000;
+  color: #ffffff;
   width: 250px;
   text-align: center;
   
@@ -91,4 +92,9 @@ header, .navbar {
 }
 
 
+
+.backgroundColor {
+	background-color: #ff0000;
+	color: #ffffff;
+}
  

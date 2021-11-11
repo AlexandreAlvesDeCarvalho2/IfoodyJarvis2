@@ -2,6 +2,7 @@ package br.com.jarvis.view;
 
 import br.com.jarvis.ifoody.dao.DaoFactory;
 import br.com.jarvis.ifoody.dao.ParceiroIfoodyDAO;
+import br.com.jarvis.ifoody.dao.PratoDAO;
 import br.com.jarvis.ifoody.dao.RestauranteDAO;
 import br.com.jarvis.ifoody.dao.EnderecoLojaDAO;
 
@@ -12,6 +13,7 @@ import java.util.List;
 
 import br.com.jarvis.entity.EnderecoLoja;
 import br.com.jarvis.entity.Parceiro;
+import br.com.jarvis.entity.Prato;
 import br.com.jarvis.entity.Restaurante;
 
 
@@ -113,6 +115,41 @@ public class Executable {
 							System.out.println(c.toString());
 						}
 			
+						
+						
+						Prato prato = new Prato();
+						PratoDAO dao4 = DaoFactory.getPratoDAO();
+						
+						
+						prato.setNm_prato("Alexandre Alves de Carvalho");
+						prato.setDesc_prato("");
+						prato.setVl_prato(2);
+						prato.setCd_restaurante(1);
+						prato.setCd_tipo_comida(1);
+						prato.setCd_estilo_cozinha(1);
+							
+						
+						//dao4.gravar(prato);
+						
+						prato.setNm_prato("Alexandre Alves de Carvalho");
+						prato.setDesc_prato("");
+						prato.setVl_prato(2);
+						prato.setCd_restaurante(1);
+						prato.setCd_tipo_comida(1);
+						prato.setCd_estilo_cozinha(1);
+				
+				//dao4.atualizar(prato);
+				
+				List<Prato> pratos = dao4.buscarTodos();
+				for(Prato c: pratos) {
+					System.out.println(c.toString());
+				}
+						
+						
+						
+						
+						
+						
 			} catch (Exception e) {
 				System.err.println("Erro ao enviar os arquivos");
 				e.printStackTrace();

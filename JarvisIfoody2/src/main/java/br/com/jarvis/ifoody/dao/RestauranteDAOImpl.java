@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
+
 
 import br.com.jarvis.entity.Restaurante;
 import br.com.jarvis.jdbc.DbMananger;
@@ -52,8 +52,8 @@ public class RestauranteDAOImpl implements RestauranteDAO {
 	
 	
 	@Override
-	public List<Restaurante> buscarTodos() {
-		List<Restaurante> restaurantes = new ArrayList<Restaurante>();
+	public ArrayList<Restaurante> buscarTodos() {
+		ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 		ResultSet rs = null;
 
 		try {
