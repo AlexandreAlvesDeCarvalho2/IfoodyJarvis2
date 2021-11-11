@@ -1,0 +1,72 @@
+package br.com.jarvis.entity;
+
+import java.io.Serializable;
+
+public class Restaurante implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	private int ID_RESTAURANTE;
+	private String NM_RESTAURANTE;
+	private int CNPJ_RESTAURANTE;
+	private int ID_PARCEIRO_RESTAURANTE;
+	private int ID_ENDERECO_RESTAURANTE;
+	public int getID_RESTAURANTE() {
+		return ID_RESTAURANTE;
+	}
+	public void setID_RESTAURANTE(int iD_RESTAURANTE) {
+		ID_RESTAURANTE = iD_RESTAURANTE;
+	}
+	public String getNM_RESTAURANTE() {
+		return NM_RESTAURANTE;
+	}
+	public void setNM_RESTAURANTE(String nM_RESTAURANTE) {
+		NM_RESTAURANTE = nM_RESTAURANTE;
+	}
+	public int getCNPJ_RESTAURANTE() {
+		return CNPJ_RESTAURANTE;
+	}
+	public void setCNPJ_RESTAURANTE(int cNPJ_RESTAURANTE) {
+		CNPJ_RESTAURANTE = cNPJ_RESTAURANTE;
+	}
+	public int getID_PARCEIRO_RESTAURANTE() {
+		return ID_PARCEIRO_RESTAURANTE;
+	}
+	public void setID_PARCEIRO_RESTAURANTE(int iD_PARCEIRO_RESTAURANTE) {
+		ID_PARCEIRO_RESTAURANTE = iD_PARCEIRO_RESTAURANTE;
+	}
+	public int getID_ENDERECO_RESTAURANTE() {
+		return ID_ENDERECO_RESTAURANTE;
+	}
+	public void setID_ENDERECO_RESTAURANTE(int iD_ENDERECO_RESTAURANTE) {
+		ID_ENDERECO_RESTAURANTE = iD_ENDERECO_RESTAURANTE;
+	}
+	
+	public Restaurante() {
+		
+	}
+	
+	public Restaurante(int iD_RESTAURANTE, String nM_RESTAURANTE, int cNPJ_RESTAURANTE, int iD_PARCEIRO_RESTAURANTE,
+			int iD_ENDERECO_RESTAURANTE) {
+		super();
+		ID_RESTAURANTE = iD_RESTAURANTE;
+		NM_RESTAURANTE = nM_RESTAURANTE;
+		CNPJ_RESTAURANTE = cNPJ_RESTAURANTE;
+		ID_PARCEIRO_RESTAURANTE = iD_PARCEIRO_RESTAURANTE;
+		ID_ENDERECO_RESTAURANTE = iD_ENDERECO_RESTAURANTE;
+	}
+	@Override
+	public String toString() {
+		return "Restaurante [ID_RESTAURANTE=" + ID_RESTAURANTE + ", NM_RESTAURANTE=" + NM_RESTAURANTE
+				+ ", CNPJ_RESTAURANTE=" + CNPJ_RESTAURANTE + ", ID_PARCEIRO_RESTAURANTE=" + ID_PARCEIRO_RESTAURANTE
+				+ ", ID_ENDERECO_RESTAURANTE=" + ID_ENDERECO_RESTAURANTE + "]";
+	}
+	
+	
+	
+	
+}
